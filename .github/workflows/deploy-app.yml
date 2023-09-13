@@ -23,4 +23,4 @@ jobs:
           # .env content after a deploy
           SHOPIFY_API_KEY: ed8f6f0d4d66e77cb7deb0be8ff98a75
           COMMIT_URL: ${{ github.server_url }}/${{ github.repository }}/commit/${{ github.sha }}
-        run: yarn deploy -f --source-control-url "$COMMIT_URL"
+        run: yarn deploy --source-control-url "$COMMIT_URL"
